@@ -1,9 +1,7 @@
 # Generate slugs when saving Eloquent models
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/alhaji-aki/laravel-uuid.svg?style=flat-square)](https://packagist.org/packages/alhaji-aki/laravel-uuid)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alhaji-aki/laravel-uuid/run-tests?label=tests)](https://github.com/alhaji-aki/laravel-uuid/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/alhaji-aki/laravel-uuid.svg?style=flat-square)](https://packagist.org/packages/alhaji-aki/laravel-uuid)
 
 This package provides a trait that will generate a unique uuid when saving any Eloquent model.
 
