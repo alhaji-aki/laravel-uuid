@@ -42,7 +42,8 @@
         "ext-pdo_sqlite": "*",
         "friendsofphp/php-cs-fixer": "^3.0",
         "orchestra/testbench": "^5.2|^6.11",
-        "phpunit/phpunit": "^9.5.1"
+        "phpunit/phpunit": "^9.5.1",
+        "spatie/macroable": "^1.0"
     },
     "scripts": {
         "test": "phpunit",
