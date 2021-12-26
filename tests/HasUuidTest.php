@@ -28,13 +28,15 @@ class HasUuidTest extends TestCase
     /** @test */
     public function it_will_save_a_unique_uuid_always()
     {
-        TestModel::create(['name' => 'this is a test']);
+        // create a model, then create another with the same uuid
+        $myModel = TestModel::create(['name' => 'this is a test']);
 
-        foreach (range(1, 10) as $i) {
-            $model = TestModel::create(['name' => 'this is a test']);
+        $mySecondModel = TestModel::create([
+            'uuid' => $myModel->uuid,
+            'name' => 'this is a test'
+        ]);
 
-            $this->assertEquals(1, TestModel::where('uuid', $model->uuid)->count());
-        }
+        $this->assertNotEquals($myModel->uuid, $mySecondModel->uuid);
     }
 
     /** @test */
