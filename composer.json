@@ -31,8 +31,8 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/database": "^7.30|^8.0",
-        "illuminate/support": "^7.30|^8.0"
+        "illuminate/database": "^7.30|^8.0|^9.0",
+        "illuminate/support": "^7.30|^8.0|^9.0"
     },
     "require-dev": {
         "ext-pdo_sqlite": "*",
